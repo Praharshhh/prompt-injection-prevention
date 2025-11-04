@@ -1,17 +1,24 @@
 # Prompt Injection Detection Model
-
 This project implements an AI/ML model for detecting prompt injection attempts in Large Language Models (LLMs). The system uses transformer-based models and traditional machine learning techniques to classify input prompts as either safe or potentially malicious.
 
-## Features
+## What is this App
+This is an open-source tool designed for prompt injection detection using Machine Learning and Natural Language Processing techniques. The application helps secure AI models and LLM systems against malicious inputs by identifying and flagging potentially harmful prompt injection attempts. It leverages advanced transformer-based models combined with traditional ML approaches to provide robust protection for AI-powered applications, ensuring safer interactions between users and language models.
 
+## Features
 - Binary classification of prompts (safe/vulnerable)
 - Pre-trained transformer model fine-tuning
 - Comprehensive feature engineering
 - Model evaluation and monitoring
 - Production-ready deployment capabilities
 
-## Project Structure
+## Future Scope
+The project has significant potential for expansion and enhancement in several key areas:
+- **API Gateway Integration**: Seamless integration with API gateways to provide real-time prompt filtering for production LLM services
+- **Multimodal Prompt Protection**: Extension to detect injection attempts in image, audio, and video prompts, not just text-based inputs
+- **Real-time Monitoring Dashboards**: Development of comprehensive dashboards for tracking detection metrics, threat patterns, and system performance
+- **LLM Architecture Support**: Expanding compatibility to support various LLM architectures including GPT, Claude, LLaMA, and other emerging models
 
+## Project Structure
 ```
 .
 ├── src/                    # Source code
@@ -28,52 +35,8 @@ This project implements an AI/ML model for detecting prompt injection attempts i
 ```
 
 ## Installation
-
 1. Create a virtual environment:
-```bash
+```
+bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-1. Data Preparation:
-```python
-from src.data import prepare_data
-prepare_data.process_raw_data()
-```
-
-2. Train Model:
-```python
-from src.models import train
-train.train_model()
-```
-
-3. Make Predictions:
-```python
-from src.models import predict
-prediction = predict.classify_prompt("Your prompt here")
-```
-
-## Testing
-
-Run tests using pytest:
-```bash
-pytest tests/
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-MIT License
